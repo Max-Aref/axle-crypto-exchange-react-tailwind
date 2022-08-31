@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "./../assets/img/hero-img.png";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+ 
 const Hero = () => {
   return (
     <section>
@@ -23,7 +24,7 @@ const Hero = () => {
             </h1>
             <p className="max-w-[440px] leading-relaxed mb-8"
             data-aos='fade-down' data-aos-delay='600'>
-              Busy and sell crypto crunccy, trusted by 5M wallets with over $20
+              Buy and sell crypto crunccy, trusted by 5M wallets with over $20
               billion in transactions.
             </p>
             <button className="btn gap-x-6 pl-6 text-sm lg:h-16 lg:text-base" data-aos='fade-down' data-aos-delay='700'>
@@ -31,10 +32,11 @@ const Hero = () => {
               <IoIosArrowDroprightCircle className="text-2xl lg:text-3xl" />
             </button>
           </div>
-          {/* hero image */}
+          {/* hero image  */}
           <div className="flex-1">
-            <img src={Image} alt=""  data-aos='fade-up' data-aos-delay='600'/>{" "}
+            <img src={Image} alt=""  data-aos='fade-up' data-aos-delay='600'/>
           </div>
+        
         </div>
       </div>
     </section>
