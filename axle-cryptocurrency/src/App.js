@@ -11,6 +11,8 @@ import Why from "./components/Why";
 import Calculate from "./components/Calculate";
 import Trade from "./components/Trade";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
+
 import NewsLetter from "./components/Newsletter";
 const App = () => {
   // mobile meuu state
@@ -41,7 +43,7 @@ const App = () => {
       <Trade />
       <Features />
       <NewsLetter />
-      <div className="h-[2000px]"></div>
+      <Footer />
     </div>
   );
 };

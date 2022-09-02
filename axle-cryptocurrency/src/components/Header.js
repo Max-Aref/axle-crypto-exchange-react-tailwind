@@ -15,8 +15,8 @@ const Header = ({ setMobileNav }) => {
       <div className="container mx-auto flex items-center justify-between">
         {/* logo */}
         <a href="/" className="flex">
-          <p className="pr-[10px] font-primary">AXLE</p>
-          <SiBlockchaindotcom className="text-2xl" />
+          <p className="pr-[10px] font-primary text-lg font-bold">AXLE</p>
+          <SiBlockchaindotcom className="text-3xl" />
         </a>
 
         {/* nav & btns */}
