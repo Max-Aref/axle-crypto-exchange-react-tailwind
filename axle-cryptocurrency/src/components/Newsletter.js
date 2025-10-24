@@ -3,19 +3,24 @@ import NewsletterForm from "../components/NewsletterForm";
 
 const Newsletter = () => {
   return (
-    <section className="py-[40px] lg:py-[88px] bg-newsletter bg-cover">
-      <div className="container mx-auto">
+    <section
+      className='py-[40px] lg:py-[88px] bg-newsletter bg-cover'
+      aria-label='Newsletter subscription section'
+    >
+      <div className='container mx-auto'>
         <div
-          className="flex flex-col lg:flex-row items-center justify-between bg-blue p-12 rounded-2xl lg:bg-newsletterBox lg:bg-no-repeat lg:h-[216px]"
-          data-aos="fade-up"
-          data-aos-offset="400"
+          className='flex flex-col lg:flex-row items-center justify-between bg-blue p-12 rounded-2xl lg:bg-newsletterBox lg:bg-no-repeat lg:h-[216px]'
+          data-aos='fade-up'
+          data-aos-offset='400'
+          role='region'
+          aria-label='Subscribe to newsletter'
         >
           {/*text  */}
-          <div className="flex-1 w-full">
-            <h3 className="h3 mb-4">Start mining now</h3>
-            <p className="max-w-[348px] mb-8">
-              Join now with Axle platform news letter to get the latest news and
-              start earning now.
+          <div className='flex-1 w-full'>
+            <h3 className='h3 mb-4'>Start mining now</h3>
+            <p className='max-w-[348px] mb-8'>
+              Join the Axle platform newsletter to get the latest news and start
+              earning today. Exclusive deals for subscribers.
             </p>
           </div>
           <NewsletterForm />
@@ -26,6 +31,3 @@ const Newsletter = () => {
 };
 
 export default Newsletter;
-
-// data-aos="fade-up"
-// data-aos-offset="400"

@@ -1,47 +1,47 @@
 // import images
-import BitconImg from './assets/img/bitcon.png';
-import EthereumImg from './assets/img/ethereum.png';
-import LitecoinImg from './assets/img/litecoin.png';
+import BitconImg from "./assets/img/bitcon.png";
+import EthereumImg from "./assets/img/ethereum.png";
+import LitecoinImg from "./assets/img/litecoin.png";
 
 export const navData = [
   {
-    name: 'Products',
-    href: '#',
+    name: "Products",
+    href: "/products",
   },
   {
-    name: 'Features',
-    href: '#',
+    name: "Features",
+    href: "/features",
   },
   {
-    name: 'About',
-    href: '#',
+    name: "About",
+    href: "/about",
   },
   {
-    name: 'Contact',
-    href: '#',
+    name: "Contact",
+    href: "/contact",
   },
 ];
 
 export const currency = [
   {
     image: BitconImg,
-    name: 'Bitcoin',
-    abbr: 'BTC',
+    name: "Bitcoin",
+    abbr: "BTC",
     description:
-      'Digital currency in which a record of transactions is maintained.',
+      "Digital currency in which a record of transactions is maintained.",
   },
   {
     image: EthereumImg,
-    name: 'Ethereum',
-    abbr: 'ETH',
+    name: "Ethereum",
+    abbr: "ETH",
     description:
-      'Blockchain technology to create and run decentralized digital applications.',
+      "Blockchain technology to create and run decentralized digital applications.",
   },
   {
     image: LitecoinImg,
-    name: 'Litecoin',
-    abbr: 'LTC',
+    name: "Litecoin",
+    abbr: "LTC",
     description:
-      'Cryptocurrency that enables instant payments to anyone in the world.',
+      "Cryptocurrency that enables instant payments to anyone in the world.",
   },
 ];

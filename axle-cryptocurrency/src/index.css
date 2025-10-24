@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-primary bg-darkblue text-white leading-normal;
   }
@@ -10,7 +14,7 @@
     @apply text-[22px] lg:text-[32px] font-bold;
   }
   .btn {
-    @apply bg-blue h-[60px] px-4 rounded-full hover:bg-blue-hover transition flex items-center text-lg font-medium outline-none;
+    @apply bg-blue h-[60px] px-4 rounded-full hover:bg-blue-hover transition flex items-center text-lg font-medium outline-none active:scale-95 active:shadow-sm;
   }
   .section {
     @apply py-12 lg:py-24;
@@ -23,12 +27,73 @@
   }
   .input,
   .select {
-    @apply outline-none w-full border-b border-gray text-darkblue h-[38px] text-xl;
+    @apply outline-none w-full border-b border-gray text-darkblue h-[38px] text-xl transition;
   }
   .input {
-    @apply lg:max-w-[410px] bg-transparent;
+    @apply lg:max-w-[410px] bg-transparent focus:border-blue;
   }
   .select {
-    @apply lg:max-w-[200px] cursor-pointer;
+    @apply lg:max-w-[200px] cursor-pointer focus:border-blue;
+  }
+
+  /* Focus states for accessibility */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    @apply outline-none ring-2 ring-blue ring-offset-2 ring-offset-darkblue;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-scale {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(54, 113, 233, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(54, 113, 233, 0);
+  }
+}
+
+@layer utilities {
+  .animate-slide-in-right {
+    animation: slide-in-right 0.3s ease-in-out;
+  }
+
+  .animate-fade-in-scale {
+    animation: fade-in-scale 0.3s ease-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  /* Touch-friendly tap feedback */
+  @media (hover: none) and (pointer: coarse) {
+    button:active {
+      @apply scale-95;
+    }
   }
 }

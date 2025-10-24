@@ -1,0 +1,55 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="miningGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="400" fill="url(#miningGrad)"/>
+  
+  <!-- Mining cards/GPUs -->
+  <g>
+    <!-- Card 1 -->
+    <rect x="30" y="80" width="80" height="120" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2" opacity="0.7"/>
+    <rect x="35" y="85" width="70" height="30" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="70" cy="150" r="8" fill="#10b981"/>
+    
+    <!-- Card 2 -->
+    <rect x="150" y="60" width="80" height="120" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2" opacity="0.7"/>
+    <rect x="155" y="65" width="70" height="30" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="190" cy="130" r="8" fill="#10b981"/>
+    
+    <!-- Card 3 -->
+    <rect x="270" y="90" width="80" height="120" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2" opacity="0.7"/>
+    <rect x="275" y="95" width="70" height="30" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="310" cy="160" r="8" fill="#10b981"/>
+    
+    <!-- Card 4 -->
+    <rect x="390" y="70" width="80" height="120" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2" opacity="0.7"/>
+    <rect x="395" y="75" width="70" height="30" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="430" cy="140" r="8" fill="#10b981"/>
+  </g>
+  
+  <!-- Hash rate bars -->
+  <g>
+    <rect x="50" y="240" width="60" height="80" fill="#3b82f6" opacity="0.3"/>
+    <rect x="52" y="310" width="56" height="10" fill="#3b82f6" opacity="0.6"/>
+    
+    <rect x="150" y="240" width="60" height="100" fill="#8b5cf6" opacity="0.3"/>
+    <rect x="152" y="330" width="56" height="10" fill="#8b5cf6" opacity="0.6"/>
+    
+    <rect x="250" y="240" width="60" height="90" fill="#10b981" opacity="0.3"/>
+    <rect x="252" y="320" width="56" height="10" fill="#10b981" opacity="0.6"/>
+    
+    <rect x="350" y="240" width="60" height="110" fill="#f59e0b" opacity="0.3"/>
+    <rect x="352" y="340" width="56" height="10" fill="#f59e0b" opacity="0.6"/>
+  </g>
+  
+  <!-- Currency symbol -->
+  <text x="250" y="45" font-size="48" fill="#3b82f6" opacity="0.6" text-anchor="middle">⚒</text>
+  
+  <!-- Title -->
+  <text x="250" y="380" font-size="24" fill="#ffffff" opacity="0.8" text-anchor="middle" font-weight="bold">Mining Calculator</text>
+</svg>
