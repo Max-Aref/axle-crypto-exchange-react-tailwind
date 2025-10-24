@@ -101,7 +101,7 @@ export const validateContactForm = (values) => {
   return errors;
 };
 
-export default {
+const validationUtils = {
   validateEmail,
   validatePassword,
   validateHashRate,
@@ -110,3 +110,5 @@ export default {
   validateCalculatorForm,
   validateContactForm,
 };
+
+export default validationUtils;
